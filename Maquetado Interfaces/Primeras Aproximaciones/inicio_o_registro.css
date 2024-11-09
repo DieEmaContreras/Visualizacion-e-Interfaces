@@ -1,0 +1,16 @@
+.header {
+    flex-direction: column;
+    height: 10vh;
+    background: linear-gradient(135deg, #160a55, #4b1d94);
+    align-content: center;
+    display: flex;
+    padding-left: 7rem;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#home_img {
+    height: 10vh;
+    width: auto;
+}
