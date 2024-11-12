@@ -10,6 +10,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.nav_home {
+    display: flex;
+    gap: 40rem; 
+    font-family: "Roboto";
+    color: white;
+}
+
 #home_img {
     height: 10vh;
     width: auto;
