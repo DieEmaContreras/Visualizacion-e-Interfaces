@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+body { font-family: "Roboto"; }
 
 .carousel {
   background: #7a7a7a;
@@ -17,6 +17,24 @@ header{
   background: rgb(255, 255, 255);
   border-radius: 5px;
   counter-increment: gallery-cell;
+}
+
+.carousel-cell button {
+  position: absolute; 
+  top: 85%; 
+  left: 80%; 
+  transform: translate(-50%, -50%); 
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel-cell button:hover {
+  background-color: rgba(0, 0, 0, 0.9); 
 }
 
 .carousel-cell .carousel-cell__img {

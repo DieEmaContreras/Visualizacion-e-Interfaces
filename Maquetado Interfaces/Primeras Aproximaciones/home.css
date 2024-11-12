@@ -21,3 +21,8 @@
     height: 10vh;
     width: auto;
 }
+
+#img_carrusel {
+    height: 50vh;   
+    width: 100%;
+}
