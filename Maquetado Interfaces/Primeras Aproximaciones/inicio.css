@@ -193,14 +193,39 @@ body{
     margin-left: 1rem;
     font-size: 0.8rem;
 }
-#datos-turno h5{
-    font-weight: 500;
-    font-size: 0.8rem;
+#nombre-usuario-turno{
+    font-weight: 600;
 }
 
 #separaciones{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+}
+
+#icono-localizacion{
+    height: 1rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+#info-localizacion{
+    color: #160a55;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+#info-localizacion span{
+    font-weight: 500;
+}
+#span-centro{
+    font-size: 1rem;
+}
+
+#Sede{
+    display: flex;
+    flex-direction: column;
 }
 
 
