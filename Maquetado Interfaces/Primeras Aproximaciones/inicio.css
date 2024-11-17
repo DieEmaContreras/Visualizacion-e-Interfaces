@@ -19,25 +19,25 @@ body{
     padding-left: 58rem;
 }
 #icono-perfil{
-    height: 5vh;
+    height: 7vh;
     width: auto;
     cursor: pointer;
 }
 #icono-salida{
-    height: 4vh;
+    height: 5vh;
     width: auto;
     cursor: pointer;
     padding-right: 4rem;
 }
 
 #logo-header{
-    height: 7vh;
+    height: 10vh;
     width: auto;
     padding-left: 5rem;
 }
 
 #icono-opciones{
-    height: 3vh;
+    height: 3.5vh;
     width: auto;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ body{
 }
 .opciones{
     padding: 1rem;
-    background-color: rgb(242, 238, 238);
+    background-color: rgb(230, 224, 224);
     box-shadow: 2px 6px 12px rgba(3, 0, 0, 0.511);
 }
 
