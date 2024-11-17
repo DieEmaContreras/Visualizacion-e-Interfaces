@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    box-shadow: 0px 6px 12px rgba(3, 0, 0, 0.305);
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+#nombre-usuario{
+    padding-left: 58rem;
+}
+#icono-perfil{
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+}
+#icono-salida{
+    height: 4vh;
+    width: auto;
+    cursor: pointer;
+    padding-right: 4rem;
+}
+
+#logo-header{
+    height: 7vh;
+    width: auto;
+    padding-left: 5rem;
+}
+
+#icono-opciones{
+    height: 3vh;
+    width: auto;
+    cursor: pointer;
+}
+
+
+#icono-opcion{
+    height: 2.5vh;
+    width: auto;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.opciones{
+    
+    padding: 1rem;
+    background-color: rgb(242, 238, 238);
+    height: 100vh;
+    box-shadow: 2px 6px 12px rgba(3, 0, 0, 0.511);
+}
+
+.opciones-article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+#span-opciones{
+    color: #160a55;
+    padding-left: 0.8rem;
+    cursor: pointer;
+}
+.cajas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;   
+    gap: 2rem;                    
+    margin: 2rem;               
+    flex-grow: 1;                 
+}
+
+.cajas article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;     
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.622); 
+    border-radius: 8px;           
+    padding: 1rem;                
+    height: 90%;          
+}
+
+.cajas h2 {
+    margin: 0;                    
+    font-weight: 500;         
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    height: 25vh;
+    background-color: #0a061f;
+    place-items: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+#logo_footer {
+    height: 10vh;
+    width: auto;
+}
+
