@@ -7,12 +7,19 @@
     <title>Turnos Médicos</title>
     <link rel="stylesheet" href="turnos.css">
     <script src="turnos.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
 
     <header class="header">
-        <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+        <a href="inicio.html"><img src="../img/opcion_6.png" alt="Logo" id="logo-header"></a>
         <span id="nombre-usuario"> Aquino Santiago</span>
         <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
         <img src="../img/log-out.png" alt="salida" id="icono-salida">
@@ -23,18 +30,18 @@
             <article class="opciones-article">
                 <img src="../img/add.png" alt="turnos" id="icono-opciones">
                 <a href="solicitudTurno.html" style="margin-left: 8%; text-decoration: none;">Turnos</a>
-
+                <!--<span id="span-opciones">Turnos</span>-->
             </article>
             <article class="opciones-article">
-                <img src="../img/cash_2698346.png" alt="Reintegros" id="icono-opciones">
+                <img src="../img/cash.png" alt="Reintegros" id="icono-opciones">
                 <span id="span-opciones">Reintegros</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/video-call_8417109.png" alt="Medico Virtual" id="icono-opciones">
+                <img src="../img/meeting.png" alt="Medico Virtual" id="icono-opciones">
                 <span id="span-opciones">Medico virtual</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/chart_9171974.png" alt="Datos Medicos" id="icono-opciones">
+                <img src="../img/cabinet.png" alt="Datos Medicos" id="icono-opciones">
                 <span id="span-opciones">Datos Medicos</span>
             </article>
             <article class="opciones-article">
@@ -58,7 +65,7 @@
         <section class="cajas">
 
             <article class="box-turnos-article">
-               
+
                 <div id="step1" class="step active">
                     <h2>Seleccione el tipo de turno:</h2>
                     <button onclick="selectOption('consulta')" class="button">Consulta Médica</button>
@@ -67,7 +74,11 @@
 
                 <!-- Paso 2 -->
                 <div id="step2" class="step">
-                    <button class="back-button" onclick="goBack('step1')">Volver</button>
+                    <!-- <button class="back-button" onclick="goBack('step1')">Volver</button> -->
+                    <button class="back-button" onclick="goBack('step1')">
+                        <i class="fa fa-arrow-left"></i>
+                        <span>Volver</span>
+                    </button>
                     <h2 id="searchTitle"></h2>
                     <input list="optionsList" id="searchInput" placeholder="Escriba aquí..."
                         onchange="handleDatalistSelection()">
@@ -76,19 +87,40 @@
 
                 <!-- Paso 3 -->
                 <div id="step3" class="step">
-                    <button class="back-button" onclick="goBack('step2')">Volver</button>
+                    <!-- <button class="back-button" onclick="goBack('step2')">Volver</button> -->
+                    <button class="back-button" onclick="goBack('step2')">
+                        <i class="fa fa-arrow-left"></i>
+                        <span>Volver</span>
+                    </button>
                     <h2>Turnos disponibles:</h2>
                     <div id="turnosContainer"></div>
                 </div>
 
+                <!-- Mensaje instructivo -->
+                <div id="instructiveOverlay" class="overlay hidden">
+                    <div class="instructive-box">
+                        <h2>¡Nueva Función Disponible!</h2>
+                        <p>Ahora puedes seleccionar si deseas recibir una notificación por email en caso de que se
+                            libere un turno más cercano al que vas a reservar.</p>
+                        <p>Simplemente marca la casilla en la tarjeta del turno que elijas.</p>
+                        <button class="button" onclick="hideInstructive()">Entendido</button>
+                    </div>
+                </div>
                 <!-- Confirmación -->
                 <div id="confirmation" class="step">
-                    <h2 id="confirmationMessage">¿Confirmar este turno?</h2>
-                    <button class="button" onclick="confirmYes()">Sí</button>
-                    <button class="button" onclick="goBack('step3')">No</button>
+                    <h2 id="confirmationMessage">Resumen del turno</h2>
+                    <div id="turnoSummary" class="summary-card">
+                        <!-- El resumen del turno se genera dinámicamente -->
+                    </div>
+                    <div class="button-container">
+                        <button class="button" onclick="confirmYes()">Confirmar</button>
+                        <button class="button button-cancel" onclick="cancelTurno()">Cancelar</button>
+                        <!--<button class="button" onclick="cancelTurno()">Cancelar</button>-->
+                    </div>
                 </div>
+
             </article>
-        </section>    
+        </section>
     </main>
 
     <footer class="footer">
