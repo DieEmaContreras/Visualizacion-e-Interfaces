@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos Médicos</title>
+    <link rel="stylesheet" href="turnos.css">
+    <script src="turnos.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+        <span id="nombre-usuario"> Aquino Santiago</span>
+        <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
+        <img src="../img/log-out.png" alt="salida" id="icono-salida">
+    </header>
+
+    <main class="main-content">
+        <section class="opciones">
+            <article class="opciones-article">
+                <img src="../img/add.png" alt="turnos" id="icono-opciones">
+                <a href="solicitudTurno.html" style="margin-left: 8%; text-decoration: none;">Turnos</a>
+
+            </article>
+            <article class="opciones-article">
+                <img src="../img/cash_2698346.png" alt="Reintegros" id="icono-opciones">
+                <span id="span-opciones">Reintegros</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/video-call_8417109.png" alt="Medico Virtual" id="icono-opciones">
+                <span id="span-opciones">Medico virtual</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/chart_9171974.png" alt="Datos Medicos" id="icono-opciones">
+                <span id="span-opciones">Datos Medicos</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/credit-card_15374430.png" alt="Facturacion" id="icono-opciones">
+                <span id="span-opciones">Facturacion</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/failure_9759850.png" alt="Reclamos" id="icono-opciones">
+                <span id="span-opciones">Reclamos</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/contact-info_5300428.png" alt="Contactanos" id="icono-opciones">
+                <span id="span-opciones">Contactanos</span>
+            </article>
+            <article class="opciones-article">
+                <img src="../img/rb_6187.png" alt="Preguntas frecuentes" id="icono-opcion">
+                <span id="span-opciones">Preguntas Frecuentes</span>
+            </article>
+        </section>
+        <!-- Paso 1 -->
+        <section class="cajas">
+
+            <article class="box-turnos-article">
+               
+                <div id="step1" class="step active">
+                    <h2>Seleccione el tipo de turno:</h2>
+                    <button onclick="selectOption('consulta')" class="button">Consulta Médica</button>
+                    <button onclick="selectOption('estudio')" class="button">Estudio</button>
+                </div>
+
+                <!-- Paso 2 -->
+                <div id="step2" class="step">
+                    <button class="back-button" onclick="goBack('step1')">Volver</button>
+                    <h2 id="searchTitle"></h2>
+                    <input list="optionsList" id="searchInput" placeholder="Escriba aquí..."
+                        onchange="handleDatalistSelection()">
+                    <datalist id="optionsList"></datalist>
+                </div>
+
+                <!-- Paso 3 -->
+                <div id="step3" class="step">
+                    <button class="back-button" onclick="goBack('step2')">Volver</button>
+                    <h2>Turnos disponibles:</h2>
+                    <div id="turnosContainer"></div>
+                </div>
+
+                <!-- Confirmación -->
+                <div id="confirmation" class="step">
+                    <h2 id="confirmationMessage">¿Confirmar este turno?</h2>
+                    <button class="button" onclick="confirmYes()">Sí</button>
+                    <button class="button" onclick="goBack('step3')">No</button>
+                </div>
+            </article>
+        </section>    
+    </main>
+
+    <footer class="footer">
+        <section class="logo_redes">
+            <img src="../img/opcion_6.png" alt="imagen logo" id="logo_footer">
+            <h3>
+                Direccion:
+            </h3>
+            <h4>
+                2344 Mansilla, Moron
+                Buenos Aires, Argentina
+            </h4>
+        </section>
+
+        <section clas="contacto">
+            <h3>Contacto</h3>
+            <h4>
+                Telefono
+            </h4>
+            <h4>
+                Email
+            </h4>
+            <h4>
+                Formulario
+            </h4>
+        </section>
+
+        <section class="ayuda">
+            <h3>Ayuda</h3>
+            <h4>
+                Opcion 1
+            </h4>
+            <h4>
+                Opcion 2
+            </h4>
+            <h4>
+                Opcion 3
+            </h4>
+        </section>
+    </footer>
+
+</body>
+
+</html>
