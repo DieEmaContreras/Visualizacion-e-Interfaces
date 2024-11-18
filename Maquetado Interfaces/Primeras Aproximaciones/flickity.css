@@ -12,14 +12,19 @@ header{
 
 .carousel-cell {
   width: 50%;
-  height: 250px;
+  height: 300px;
   margin-right: 10px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
+  background: rgb(255, 255, 255);  
   counter-increment: gallery-cell;
 }
 
-.carousel-cell button {
+.caroulsel-cell__text1{
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 175%;
+}
+
+.button {
   position: absolute; 
   top: 85%; 
   left: 80%; 
@@ -28,38 +33,48 @@ header{
   background-color: rgba(0, 0, 0, 0.7); 
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  font-size: 8px;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+.carousel-cell__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.caroulsel-cell__text {
+  position: absolute;
+  top: 5%; 
+  left: 0%;  
+  align-items: center;  
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.7); 
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 200;
+}
+
+
+
+.carousel-cell__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Imagen adaptada al contenedor */
 }
 
 .carousel-cell button:hover {
   background-color: rgba(0, 0, 0, 0.9); 
 }
 
-.carousel-cell .carousel-cell__img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  
-    left: 35%;
-    top: 10%;  
 
-  }
-  .carousel-cell .carousel-cell__content {
-    width: 50%;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
-  
 
-  }
-  
-  .carousel-cell .carousel-cell__text {
-    font-size: 2000px;    
-    font-family: "Roboto";
-    color: #0c0909;
-    text-align: center;
-  }
+
   
 
 /* cell number */
