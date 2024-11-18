@@ -37,6 +37,16 @@ body{
     width: auto;
 }
 
+#img_mosquito{
+    width: 85%;
+    padding-left: 1%;
+}
+
+#mapa_sede{
+    width: 85%;
+    padding-left: 1%;
+}
+
 #user {
     height: 8vh;
     padding-top: 0.2rem;
