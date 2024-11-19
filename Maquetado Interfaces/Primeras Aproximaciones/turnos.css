@@ -1,16 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto";
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
-}
-
-.header {
-  background: #007bff;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
 }
 
 .main-content {
@@ -53,10 +46,14 @@ body {
 }
 
 .footer {
-  background: #007bff;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  height: 40vh;
+  background-color: #0a061f;
+  place-items: center;
+  color: #ffffff;
+  font-size: 0.8rem;
 }
 body{
   margin: 0;
@@ -76,18 +73,19 @@ body{
   z-index: 10;
 }
 #nombre-usuario{
-  padding-left: 58rem;
+    padding-left: 58rem;
+    font-weight: 500;
 }
 #icono-perfil{
-  height: 7vh;
-  width: auto;
-  cursor: pointer;
+    height: 7vh;
+    width: auto;
+    cursor: pointer;
 }
 #icono-salida{
-  height: 5vh;
-  width: auto;
-  cursor: pointer;
-  padding-right: 4rem;
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+    padding-right: 4rem;
 }
 
 #logo-header{
