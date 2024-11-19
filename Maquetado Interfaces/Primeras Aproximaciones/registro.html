@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Maquetado Interfaces/styles/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="background-container">
+        
+        <img src="/Maquetado Interfaces/img/FondoRegistro.JPG" alt="Fondo" class="background-image">
+        <br> <br>
+        <form action="/submit" method="post">
+            <div class="logo-container">
+                <img src="/Maquetado Interfaces/img/opcion_6.png" alt="Logo" class="form-logo">
+            </div>
+            <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Repetir contraseña" required>
+            <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+            <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" required>
+            <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+            <select id="prepaga" name="prepaga" required>
+                <option value="">Seleccione una opción de prepaga</option>
+                <option value="prepaga1">Prepaga 1</option>
+                <option value="prepaga2">Prepaga 2</option>
+                <option value="prepaga3">Prepaga 3</option>
+            </select>
+            <br>
+            <a href="login.html" class="btn-link">Registrarse</a>
+        </form>
+    </div>
+
+</body>
+</html>

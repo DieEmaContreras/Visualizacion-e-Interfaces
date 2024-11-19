@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,16 @@
     <link rel="stylesheet" href="inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
-        <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+        <a href="inicio.html">
+            <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+        </a>
         <span id="nombre-usuario"> Aquino Santiago</span>
         <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
         <img src="../img/log-out.png" alt="salida" id="icono-salida">
@@ -56,86 +62,87 @@
     </section>
     <section class="cajas">
 
-        <article class="box-turnos-article">
-            <h2>
-                Mis Turnos
-            </h2>
+            <article class="box-turnos-article">
+                <h2>
+                    Mis Turnos
+                </h2>
 
-            <div id="box-turnos">
-                <div id="left-turnos">
-                    <span id="dia-turno">
-                        Jueves
-                    </span>
-                    <Span id="numero-dia-turno">15</Span>
-                    <span id="mes-año-turno">
-                        DIC 2024
-                    </span>
+                <div id="box-turnos">
+                    <div id="left-turnos">
+                        <span id="dia-turno">
+                            Jueves
+                        </span>
+                        <Span id="numero-dia-turno">15</Span>
+                        <span id="mes-año-turno">
+                            DIC 2024
+                        </span>
+                    </div>
+                    <div id="separaciones">
+                        <div id="hora-editar">
+                            <h4>Hora: 14:30 hs</h4>
+                            <img src="../img/square.png" alt="icono-editar" id="icono-editar">
+                        </div>
+                        <div id="datos-turno">
+                            <span id="nombre-usuario-turno">
+                                AQUINO SANTIAGO
+                            </span>
+                            <span>
+                                ODONTOLOGIA GENERAL
+                            </span>
+                            <span>
+                                DRA.MARIA RODRIGUEZ
+                            </span>
+                        </div>
+                        <div>
+                            <button id="boton-cancelar">Cancelar</button>
+                        </div>
+                    </div>
                 </div>
-                <div id="separaciones">
-                    <div id="hora-editar">
-                        <h4>Hora: 14:30 hs</h4>
-                        <img src="../img/square.png" alt="icono-editar" id="icono-editar">
-                    </div>
-                    <div id="datos-turno">
-                        <span id="nombre-usuario-turno">
-                           AQUINO SANTIAGO
-                        </span>
-                        <span>
-                            ODONTOLOGIA GENERAL
-                        </span>
-                        <span>
-                           DRA.MARIA RODRIGUEZ
-                        </span>
-                    </div>
-                    <div>
-                        <button id="boton-cancelar">Cancelar</button>
-                    </div>
+            </article>
+
+            <article>
+                <h2>
+                    Mis Datos Medicos
+                </h2>
+            </article>
+
+
+            <article>
+                <h2>
+                    Mi credencial
+                </h2>
+            </article>
+
+
+            <article id="Sede">
+                <h2>
+                    Nuestra Sede
+                </h2>
+                <div id="info-localizacion">
+                    <span id="span-centro">Centro Medico MediCare Moron</span>
+                    <span> <img src="../img/check.png" alt="icono localizacion" id="icono-localizacion">MORON | Mansilla
+                        2344, Moron, Buenos Aires</span>
+                    <img src="../img/Captura de pantalla 2024-11-18 120031.png" alt="Mapa moron" id="mapa">
                 </div>
-            </div>
-        </article>
-
-        <article>
-            <h2>
-               Mis Datos Medicos
-            </h2>
-        </article>
+            </article>
 
 
-        <article>
-            <h2>
-               Mi credencial
-            </h2>
-        </article>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <section class="logo_redes">
+            <img src="../img/opcion_6.png" alt="imagen logo" id="logo_footer">
+            <h3>
+                Direccion:
+            </h3>
+            <h4>
+                2344 Mansilla, Moron
+                Buenos Aires, Argentina
+            </h4>
+        </section>
 
-        <article id="Sede">
-            <h2>
-              Nuestra Sede
-            </h2>
-            <div id="info-localizacion">
-                <span id="span-centro">Centro Medico MediCare Moron</span>
-                <span> <img src="../img/check.png" alt="icono localizacion" id="icono-localizacion">MORON | Mansilla 2344, Moron, Buenos Aires</span>
-                <img src="../img/Captura de pantalla 2024-11-18 120031.png" alt="Mapa moron" id="mapa">
-            </div>
-        </article>
-
-
-    </section>
-</main>
-
-<footer class="footer">
-    <section class="logo_redes">
-        <img src="../img/opcion_6.png" alt="imagen logo" id="logo_footer">
-        <h3>
-            Direccion:
-        </h3>
-        <h4>
-            2344 Mansilla, Moron
-            Buenos Aires, Argentina
-        </h4>
-    </section>
-
-    <section clas="contacto">
+        <section clas="contacto">
             <h3>Contacto</h3>
             <h4>
                 Telefono
@@ -146,21 +153,22 @@
             <h4>
                 Formulario
             </h4>
-    </section>
+        </section>
 
         <section class="ayuda">
             <h3>Ayuda</h3>
             <h4>
-               Opcion 1
+                Opcion 1
             </h4>
             <h4>
-               Opcion 2
+                Opcion 2
             </h4>
             <h4>
                 Opcion 3
             </h4>
         </section>
-</footer>
-    
+    </footer>
+
 </body>
+
 </html>
