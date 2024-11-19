@@ -37,6 +37,16 @@ body{
     width: auto;
 }
 
+#img_mosquito{
+    width: 85%;
+    padding-left: 1%;
+}
+
+#mapa_sede{
+    width: 85%;
+    padding-left: 1%;
+}
+
 #user {
     height: 8vh;
     padding-top: 0.2rem;
@@ -100,8 +110,10 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 6rem;
     height: 25vh;
-    background-color: #030010;
+    background-color: #0a061f;
     place-items: center;
+    color: #ffffff;
+    font-size: 0.8rem;
 }
 
 .logo_redes .contacto .ayuda {
@@ -115,16 +127,6 @@ body{
 #logo_footer {
     height: 10vh;
     width: auto;
-}
-
-h3 {
-    color: #f0f8ff;
-    font-size: 1.1rem; 
-}
-
-h4 {
-    color: #f0f8ff;
-    font-size: 0.75rem; 
 }
 .turnos label {
     color:#06011e ;

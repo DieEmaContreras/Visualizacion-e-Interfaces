@@ -1,7 +1,7 @@
 .header {
     flex-direction: column;
     height: 10vh;
-    background: linear-gradient(135deg, #160a55, #4b1d94);
+    background: linear-gradient(135deg, #160a55, #162e7b);
     align-content: center;
     display: flex;
     padding-left: 7rem;
@@ -10,6 +10,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+
+.seccion-sede {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text-sede {
+    padding-left: 25vh;
+}
 .nav_home {
     display: flex;
     gap: 40rem; 
@@ -19,10 +28,12 @@
 
 #home_img {
     height: 10vh;
-    width: auto;
+    width: 100%;
 }
 
 #img_carrusel {
     height: 50vh;   
     width: 100%;
+    padding-left: 5vh;
+    border: 1px border black;
 }

@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    box-shadow: 0px 6px 12px rgba(3, 0, 0, 0.305);
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+}
+#nombre-usuario{
+    padding-left: 58rem;
+    font-weight: 500;
+}
+#icono-perfil{
+    height: 7vh;
+    width: auto;
+    cursor: pointer;
+}
+#icono-salida{
+    height: 5vh;
+    width: auto;
+    cursor: pointer;
+    padding-right: 4rem;
+}
+
+#logo-header{
+    height: 10vh;
+    width: auto;
+    padding-left: 5rem;
+}
+
+#icono-opciones{
+    height: 3.5vh;
+    width: auto;
+    cursor: pointer;
+}
+
+
+#icono-opcion{
+    height: 2.5vh;
+    width: auto;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.opciones{
+    padding: 1rem;
+    background-color: rgb(230, 224, 224);
+    box-shadow: 2px 6px 12px rgba(3, 0, 0, 0.511);
+}
+
+.opciones-article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+#span-opciones{
+    color: #160a55; 
+    padding-left: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.cajas {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;   
+    gap: 2rem;                    
+    margin: 2rem;               
+    flex-grow: 1;                 
+}
+
+.cajas article {
+    display: flex;
+    text-align: start;
+    background-color: #ffffff;     
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.622); 
+    border-radius: 8px;           
+    padding: 1rem;                
+    height: 90%;          
+}
+
+.cajas h2 {
+    margin: 0;       
+    font-size: 1.4rem;   
+    color: #160a55; 
+    font-weight: 500;         
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+    height: 25vh;
+    background-color: #0a061f;
+    place-items: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+#logo_footer {
+    height: 10vh;
+    width: auto;
+}
+
+#box-turnos{
+    display: flex;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.622); 
+    border-radius: 0.8rem;
+    height: 60%;
+    width: 80%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.box-turnos-article{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-turnos-article h4{
+    color: #160a55;
+    font-weight: 600;
+}
+
+#icono-editar{
+    cursor: pointer;
+    height: 3rem;
+    width: auto;
+    padding-left: 3rem;
+}
+
+#boton-cancelar{
+    border-radius: 2rem;
+    height: 2rem;
+    width: auto;
+    color: #ffffff;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 0.8rem;
+    margin-left: 11rem;
+}
+#left-turnos{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    border-radius: 0.5rem;
+    height: 80%;
+    width: 30%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+#dia-turno{
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+#numero-dia-turno{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#mes-año-turno{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+#hora-editar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    height: 40%;
+}
+#datos-turno{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+#nombre-usuario-turno{
+    font-weight: 600;
+}
+
+#separaciones{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#icono-localizacion{
+    height: 1rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+#info-localizacion{
+    color: #160a55;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+#info-localizacion span{
+    font-weight: 500;
+}
+#span-centro{
+    font-size: 1rem;
+}
+
+#Sede{
+    display: flex;
+    flex-direction: column;
+}
+
+#mapa{
+    height: 12rem;
+    width: auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.445); 
+}
+
+
+
+
