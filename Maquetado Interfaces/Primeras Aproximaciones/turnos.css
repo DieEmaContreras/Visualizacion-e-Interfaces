@@ -34,12 +34,8 @@ body{
 }
 
 .button-cancel {
-  background-color: #ff1900; /* Rojo */
-  color: white;
-}
-
-.button-cancel:hover {
-  background-color: #c0392b; /* Rojo más oscuro al pasar el mouse */
+  background: linear-gradient(135deg, #d90b0b, #801313);/* Rojo */
+  color: #ffffff;
 }
 
 .card {
@@ -96,10 +92,6 @@ body{
   height: 3.2vh;
   width: auto;
   cursor: pointer;
-}
-.main{
-  display: flex;
-  flex-direction: row;
 }
 .opciones{
   padding: 2rem;
