@@ -1,3 +1,4 @@
+
 body {
   font-family: "Roboto";
   line-height: 1.6;
@@ -43,12 +44,12 @@ body {
 }
 
 .button-cancel {
-  background-color: #ff1900; /* Rojo */
+  background-color: #ff1900; 
   color: white;
 }
 
 .button-cancel:hover {
-  background-color: #c0392b; /* Rojo más oscuro al pasar el mouse */
+  background-color: #c0392b; 
 }
 
 .card {
@@ -205,7 +206,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* Overlay oscuro */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -219,7 +220,7 @@ body{
   z-index: 1000;
 }
 
-/* Caja de contenido del instructivo */
+
 .instructive-box {
   background: white;
   padding: 20px;
@@ -241,7 +242,7 @@ body{
   color: #333;
 }
 
-/* Botón para continuar */
+
 .hidden {
   display: none;
 }
@@ -249,7 +250,7 @@ body{
 .back-button {
   background: none;
   border: none;
-  color: #160a55; /* Azul como el botón "Entendido" */
+  color: #160a55;/* Azul como el botón "Entendido"*/ 
   font-size: 20px;
   cursor: pointer;
   display: flex;
@@ -261,7 +262,7 @@ body{
 }
 
 .back-button i {
-  margin-right: 8px; /* Separación entre la flecha y el texto */
+  margin-right: 8px; /* Separación entre la flecha y el texto*/
 }
 
 .searchInput{
@@ -296,11 +297,3 @@ body{
   width: 120px;
   margin-left: 36px
 }
-
-
-
-
-
-
-
-  
