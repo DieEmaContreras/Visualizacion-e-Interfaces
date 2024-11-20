@@ -29,7 +29,9 @@
 
 .nav_home {
     display: flex;
-    gap: 60rem; 
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Distribuir los elementos */
+    padding: 0 2rem; /* Agregar un espacio horizontal */
     font-family: "Roboto";
     color: white;
 }
@@ -52,6 +54,11 @@
     width: 50%;
 }
 
+.btn-container {
+    display: flex;
+    gap: 1rem; 
+}
+
 /* Estilo general del modal */
 .modal {
     display: none;
@@ -61,26 +68,27 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro más opaco */
+    background: rgba(0, 0, 0, 0.7); 
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 
-/* Ajustar el tamaño del logo */
+
 .modal-content img {
-    width: 120px; /* Ajusta el ancho del logo */
-    height: auto; /* Mantén las proporciones */
+    width: 120px; 
+    height: auto; 
     display: block;
-    margin: 0 auto 20px; /* Centra el logo y añade espacio debajo */
+    margin: 0 auto 20px; 
 }
 
 
-/* Mostrar el modal cuando está activo */
+
 .modal:target {
     display: flex;
 }
 
-/* Contenedor del contenido del modal */
+
 .modal-content {
     background: #ffffff;
     padding: 30px;
@@ -88,9 +96,9 @@
     width: 90%;
     max-width: 400px;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
     animation: slideIn 0.3s ease-in-out;
-    text-align: center; /* Centrar el contenido */
+    text-align: center; 
 }
 
 /* Botón de cierre */
@@ -156,9 +164,9 @@
 }
 
 .olvidaste-contra {
-    display: block; /* Asegura que esté en una nueva línea */
-    margin-bottom: 15px; /* Ajusta el espacio debajo del enlace */
-    text-align: right; /* Mantiene el enlace alineado a la derecha */
+    display: block; 
+    margin-bottom: 15px; 
+    text-align: right; 
 }
 
 .btn-link {
@@ -169,14 +177,15 @@
 /* Estilo para los botones de Iniciar sesión y Registrarse */
 .btn-login,
 .btn-registro {
-    background-color: #160a55; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Eliminar bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
-    transition: background-color 0.3s ease; /* Efecto de transición */
+    background-color: linear-gradient(135deg, #160a55, #162e7b); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    background: transparent;
 }
 
 
@@ -201,16 +210,37 @@
     }
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
+    .nav_home {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn-login,
+    .btn-registro {
+        width: 90%; 
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
     .modal-content {
         width: 95%;
-        max-width: none; /* Eliminar límite de ancho en móviles */
+        padding: 20px;
     }
 
     .modal-content input,
-    .modal-content select,
-    .modal-content button {
-        font-size: 12px; /* Reducir tamaño del texto */
+    .modal-content select {
+        font-size: 14px; 
+        padding: 10px;
+    }
+
+    .modal-content .btn-link {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #img {
+        max-width: 80px; 
     }
 }
