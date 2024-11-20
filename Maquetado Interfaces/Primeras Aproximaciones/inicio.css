@@ -330,70 +330,101 @@ body{
     width: auto;
     margin: 0.8rem;
 
-}@media screen and (max-width: 800px) {
-    body {
-        width: 100%;
-    }
+}
+#menu-toggle {
+    display: none; 
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+}
 
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .header {
-        flex-wrap: nowrap; /* Mantener los elementos en una fila */
-        padding: 0 1rem;
+        height: 8vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     #nombre-usuario {
         font-size: 0.8rem;
-        padding-left: 0.5rem;
-        margin-left: 15rem; 
     }
 
     #icono-perfil, #icono-salida {
-        height: 4vh; /* Ajustar tamaños */
+        height: 4vh;
     }
 
     #logo-header {
-        height: 8vh; /* Ajustar el tamaño del logo */
+        height: 7vh;
     }
-
-    .main {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .opciones {
-        width: 30%; /* Opciones a la izquierda */
-        padding: 0.5rem; /* Reducir espacio interno */
+    #span-opciones{
+        font-size: 1rem;
     }
 
     .cajas {
-        width: 70%; /* Cajas a la derecha */
-        grid-template-columns: 1fr; /* Una sola columna */
-        gap: rem; /* Ajustar separación entre elementos */
+        max-width: auto; 
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0;
     }
-
     .footer {
-        grid-template-columns: repeat(3, 1fr); /* Mantener columnas en mobile */
-        gap: 1rem; /* Reducir el espacio entre columnas */
-        font-size: 0.7rem; /* Ajustar tamaños */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1rem; 
+        font-size: 0.7rem;
         padding: 0.5rem;
     }
 
     #logo_footer {
-        height: 8vh; /* Ajustar tamaño del logo del footer */
+        height: 8vh;
     }
 
     .secciones-datos {
         margin-left: 1rem;
-        gap: 1rem; /* Reducir espacio entre elementos */
+        gap: 1rem; 
     }
 
     .datos-internos {
-        height: auto; /* Ajustar tamaño de las tarjetas */
-        width: 80%; /* Ajustar ancho */
+        height: auto; 
+        width: 80%; 
     }
 
     #mapa {
-        width: 90%; /* Ajustar tamaño del mapa */
-        height: auto; /* Mantener proporción */
+        width: 70%; 
+        height: auto; 
+    }
+    #icono-opciones{
+        height: 1.4rem;
+    }
+    #icono-opcion{
+        height: 1.2rem;
+    }
+    #menu-toggle {
+        display: block;
+    }
+
+    .opciones {
+        display: none;
+        position: absolute;
+        background-color: rgb(238, 235, 235);
+        max-height: 100%;
+        width: 30%;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
+        padding: 1rem;
+    }
+
+    .opciones.active {
+        display: block;
     }
 }
 
