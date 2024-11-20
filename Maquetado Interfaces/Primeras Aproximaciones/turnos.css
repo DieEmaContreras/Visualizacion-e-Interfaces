@@ -31,6 +31,7 @@ body {
 
 .button:not(.button-cancel) {
   background: linear-gradient(135deg, #160a55, #162e7b);
+  margin-top: 1rem;
 }
 
 .button-cancel {
