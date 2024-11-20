@@ -20,12 +20,69 @@
         <nav class="nav_home">
             <img src="../img/opcion_6.png" alt="Logo Medicare" id="img">           
             
-            <h4>Iniciar Sesion o Registrarse</h4>
-            
+            <button class="modal-trigger btn-login" data-modal="modal-login">Iniciar sesión</button>
+            <button class="modal-trigger btn-registro" data-modal="modal-registro">Registrarse</button>
         </nav>
     </header>
+
+
+     <!-- Modal de Login -->
+     <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form action="/submit" method="post">
+                <div class="logo-container">
+                    <img src="/Maquetado Interfaces/img/opcion_6.png" alt="Logo" class="form-logo">
+                </div>
+                <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <a href="" class="olvidaste-contra">¿Olvidó su contraseña?</a>
+                <button type="submit" class="btn-link">Iniciar sesión</button>
+                <div class="inline-container">
+                    <p class="inline-text">¿No tiene cuenta?</p>
+                    <a href="#modal-registro" class="modal-trigger" data-modal="modal-registro">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="modal-registro" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form action="/submit" method="post">
+                <div class="logo-container">
+                    <img src="/Maquetado Interfaces/img/opcion_6.png" alt="Logo" class="form-logo">
+                </div>
+                <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Repetir contraseña" required>
+                <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                <select id="prepaga" name="prepaga" required>
+                    <option value="">Seleccione una opción de prepaga</option>
+                    <option value="prepaga1">Prepaga 1</option>
+                    <option value="prepaga2">Prepaga 2</option>
+                    <option value="prepaga3">Prepaga 3</option>
+                </select>
+                <button type="submit" class="btn-link">Registrarse</button>
+            </form>
+        </div>
+    </div>
   
     <div class="carousel" data-flickity='{ "freeScroll": true }'>
+
+        <div class="carousel-cell">
+            <div class = "carousel-cell__content">
+                <ul class = "caroulsel-cell__text1">
+                <li>Gestioná tus turnos, estudios y recetas para vos y tu familia.</li>
+                <li>Accedé a tus informes, imágenes médicas y análisis de laboratorio para visualizar o descargar</li>
+                <li>Innovando en medicina moderna desde 1990. </li>
+                <li>Reservá turnos fácilmente y activá notificaciones para ser avisado si se libera un horario.</li>
+                </ul>
+            </div>            
+    </div>
 
         <div class="carousel-cell">        
             <div class = "carousel-cell__content">               
@@ -141,6 +198,7 @@
     
     <script src="flickity.pkgd.min.js"></script>
     <script src = "main.js"></script>
+    <script src = "modales.js"></script>
     
 </body>
 </html>
