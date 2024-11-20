@@ -29,15 +29,17 @@ header{
   top: 85%; 
   left: 80%; 
   transform: translate(-50%, -50%); 
-  padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 0.4rem 0.7rem;    
+  background: linear-gradient(135deg, #160a55, #162e7b);
   color: white;
-  border: none;
-  border-radius: 25px;
+  border-radius: 2rem;
+  height: 2rem;
+  width: auto;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-family: "Roboto";
-  font-weight: 200;
+  font-weight: 600;
+  
 }
 
 .carousel-cell__content {
@@ -49,15 +51,15 @@ header{
 .caroulsel-cell__text {
   position: absolute;
   top: 5%; 
-  left: 0%;  
+  left: 2%;  
   align-items: center;  
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.7); 
+  background: linear-gradient(135deg, #160a55, #162e7b);
   text-align: center;
-  font-size: 15px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: 200;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.7rem;  
+  border-radius: 2rem;
+  font-weight: 600;
 }
 
 
