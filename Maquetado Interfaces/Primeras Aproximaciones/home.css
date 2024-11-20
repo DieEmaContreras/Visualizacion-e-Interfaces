@@ -10,32 +10,46 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.h2 {
+    padding-left: 1rem;
+}
+
 
 .seccion-sede {
     display: grid;
     grid-template-columns: 50% 50%;
+    border-radius: 1px border black;
 }
 
-.text-sede {
-    padding-left: 25vh;
+.dieta-balanceada {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
+
 .nav_home {
     display: flex;
-    gap: 40rem; 
+    gap: 60rem; 
     font-family: "Roboto";
     color: white;
 }
 
 #home_img {
     height: 10vh;
-    width: 100%;
+    width: 50%;
 }
 
-#img_carrusel {
-    height: 50vh;   
-    width: 100%;
-    padding-left: 5vh;
-    border: 1px border black;
+#mapa_sede {
+    width: 75%;
+}
+
+#img_sede{
+    width: 75%;
+    left: 2rem;
+}
+
+#dieta_img {
+    width: 50%;
 }
 
 /* Estilo general del modal */

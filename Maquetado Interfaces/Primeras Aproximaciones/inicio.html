@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Inicio - MediCare</title>
     <link rel="icon" href="../img/opcion 1.png" type="image">
     <link rel="stylesheet" href="inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,51 +16,58 @@
 
 <body>
     <header class="header">
-        <a href="inicio.html">
-            <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
-        </a>
-        <span id="nombre-usuario"> Aquino Santiago</span>
-        <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
-        <img src="../img/log-out.png" alt="salida" id="icono-salida">
-    </header>
-
-    <main class="main">
-        <section class="opciones">
-            <article class="opciones-article">
-                <img src="../img/add.png" alt="turnos" id="icono-opciones">
-                <a href="solicitudTurno.html" style="margin-left: 8%; text-decoration: none;">Turnos</a>
-                <!--<span id="span-opciones">Turnos</span>-->
-            </article>
-            <article class="opciones-article">
-                <img src="../img/cash.png" alt="Reintegros" id="icono-opciones">
-                <span id="span-opciones">Reintegros</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/meeting.png" alt="Medico Virtual" id="icono-opciones">
-                <span id="span-opciones">Medico virtual</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/cabinet.png" alt="Datos Medicos" id="icono-opciones">
-                <span id="span-opciones">Datos Medicos</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/credit-card_15374430.png" alt="Facturacion" id="icono-opciones">
-                <span id="span-opciones">Facturacion</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/failure_9759850.png" alt="Reclamos" id="icono-opciones">
-                <span id="span-opciones">Reclamos</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/contact-info_5300428.png" alt="Contactanos" id="icono-opciones">
-                <span id="span-opciones">Contactanos</span>
-            </article>
-            <article class="opciones-article">
-                <img src="../img/rb_6187.png" alt="Preguntas frecuentes" id="icono-opcion">
-                <span id="span-opciones">Preguntas Frecuentes</span>
+        <section class="header-section">
+            <article class="header-left"> 
+                <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+                 <a href="inicio.html">
+                <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+            </a></article>
+            <article class="header-right">
+                <span id="nombre-usuario"> Aquino Santiago</span>
+                <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
+                <a href="../Primeras Aproximaciones/home.html">
+                    <img src="../img/log-out.png" alt="salida" id="icono-salida">
+                </a>
             </article>
         </section>
-        <section class="cajas">
+    </header>
+
+<main class="main">
+    <section class="opciones">
+        <article class="opciones-article">
+            <img src="../img/add.png" alt="turnos" id="icono-opciones">
+            <a href="solicitudTurno.html" style="margin-left: 8%; text-decoration: none; font-size: 1rem;">Turnos</a>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/cash.png" alt="Reintegros" id="icono-opciones">
+            <span id="span-opciones">Reintegros</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/doctor.png" alt="Medico Virtual" id="icono-opciones">
+            <span id="span-opciones">Medico virtual</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/cabinet.png" alt="Datos Medicos" id="icono-opciones">
+            <span id="span-opciones">Datos Medicos</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/invoice.png" alt="Facturacion" id="icono-opciones">
+            <span id="span-opciones">Facturacion</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/communication.png" alt="Reclamos" id="icono-opciones">
+            <span id="span-opciones">Reclamos</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/communicate (1).png" alt="Contactanos" id="icono-opciones">
+            <span id="span-opciones">Contactanos</span>
+        </article>
+        <article class="opciones-article">
+            <img src="../img/faq.png" alt="Preguntas frecuentes" id="icono-opcion">
+            <span id="span-opciones">Preguntas Frecuentes</span>
+        </article>
+    </section>
+    <section class="cajas">
 
             <article class="box-turnos-article">
                 <h2>
@@ -80,7 +87,9 @@
                     <div id="separaciones">
                         <div id="hora-editar">
                             <h4>Hora: 14:30 hs</h4>
-                            <img src="../img/square.png" alt="icono-editar" id="icono-editar">
+                            <a href="../Primeras Aproximaciones/solicitudTurno.html">
+                                <img src="../img/square.png" alt="icono-editar" id="icono-editar">
+                            </a>
                         </div>
                         <div id="datos-turno">
                             <span id="nombre-usuario-turno">
@@ -100,17 +109,46 @@
                 </div>
             </article>
 
-            <article>
+            <article class="datos-medicos">
                 <h2>
                     Mis Datos Medicos
                 </h2>
+                <div class="secciones-datos">
+                    <div class="datos-internos">
+                        <img src="../img/injection.png" alt="vacuna">
+                        <span>Vacunas</span>
+    
+                    </div>
+    
+                    <div class="datos-internos">
+                        <img src="../img/medical-history_12394520.png" alt="historia clinica">
+                        <span>Historia Clinica</span>
+                    </div>
+    
+                    <div class="datos-internos">
+                        <img src="../img/traceability_15395363.png" alt="">
+                        <span>Resultados de laboratorio</span>
+                    </div>
+    
+                    <div class="datos-internos">
+                        <img src="../img/newspaper_3055651.png" alt="">
+                        <span>Nuevas noticias</span>
+                    </div>
+                </div>
+              
             </article>
 
 
-            <article>
+            <article class="mi-credencial">
                 <h2>
                     Mi credencial
                 </h2>
+                <article class="credencial">
+                    <img src="../img/opcion_6.png" alt="logo medicare" id="logo-credencial">
+                    <span id="nombre-credencial">AQUINO, SANTIAGO</span>
+                    <img src="../img/watch.png" alt="icono-credencial" id="icono-credencial">
+                    <span id="span-credencial">Ver</span>
+                </article>
             </article>
 
 
@@ -170,5 +208,6 @@
     </footer>
 
 </body>
+<script src="../Primeras Aproximaciones/inicio.js"></script>
 
 </html>

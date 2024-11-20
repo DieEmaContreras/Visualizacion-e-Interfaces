@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos Médicos</title>
+    <title>Turnos Médicos - MediCare</title>
+    <link rel="icon" href="../img/opcion 1.png" type="image">
     <link rel="stylesheet" href="turnos.css">
     <script src="turnos.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,21 @@
 <body>
 
     <header class="header">
-        <a href="inicio.html"><img src="../img/opcion_6.png" alt="Logo" id="logo-header"></a>
-        <span id="nombre-usuario"> Aquino Santiago</span>
-        <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
-        <img src="../img/log-out.png" alt="salida" id="icono-salida">
+        <section class="header-section">
+            <article class="header-left">
+                <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+                <a href="inicio.html">
+                    <img src="../img/opcion_6.png" alt="Logo" id="logo-header">
+                </a>
+            </article>
+            <article class="header-right">
+                <span id="nombre-usuario"> Aquino Santiago</span>
+                <img src="../img/rb_4707.png" alt="icono-perfil" id="icono-perfil">
+                <a href="../Primeras Aproximaciones/home.html">
+                    <img src="../img/log-out.png" alt="salida" id="icono-salida">
+                </a>
+            </article>
+        </section>
     </header>
 
     <main class="main-content">
@@ -45,19 +57,19 @@
                 <span id="span-opciones">Datos Medicos</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/credit-card_15374430.png" alt="Facturacion" id="icono-opciones">
+                <img src="../img/invoice.png" alt="Facturacion" id="icono-opciones">
                 <span id="span-opciones">Facturacion</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/failure_9759850.png" alt="Reclamos" id="icono-opciones">
+                <img src="../img/message.png" alt="Reclamos" id="icono-opciones">
                 <span id="span-opciones">Reclamos</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/contact-info_5300428.png" alt="Contactanos" id="icono-opciones">
+                <img src="../img/communicate.png" alt="Contactanos" id="icono-opciones">
                 <span id="span-opciones">Contactanos</span>
             </article>
             <article class="opciones-article">
-                <img src="../img/rb_6187.png" alt="Preguntas frecuentes" id="icono-opcion">
+                <img src="../img/about.png" alt="Preguntas frecuentes" id="icono-opcion">
                 <span id="span-opciones">Preguntas Frecuentes</span>
             </article>
         </section>
@@ -67,8 +79,8 @@
             <article class="box-turnos-article">
 
                 <div id="step1" class="step active">
-                    <h2>Seleccione el tipo de turno:</h2>
-                    <button onclick="selectOption('consulta')" class="button">Consulta Médica</button>
+                    <h2 class="primerPaso">Seleccione el tipo de turno:</h2>
+                    <button onclick="selectOption('consulta')" class="button" id="BotonCM">Consulta Médica</button>
                     <button onclick="selectOption('estudio')" class="button">Estudio</button>
                 </div>
 

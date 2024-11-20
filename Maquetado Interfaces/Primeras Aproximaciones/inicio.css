@@ -5,9 +5,6 @@ body{
 }
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 10vh;
     background: linear-gradient(135deg, #160a55, #162e7b);
     box-shadow: 0px 6px 12px rgba(3, 0, 0, 0.305);
@@ -15,37 +12,51 @@ body{
     position: relative;
     z-index: 10;
 }
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-left{
+   display: flex;
+   align-items: center;
+   margin-left: 4rem;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
 #nombre-usuario{
-    padding-left: 58rem;
     font-weight: 500;
 }
 #icono-perfil{
     height: 7vh;
     width: auto;
     cursor: pointer;
+    margin-right: 0.5rem;
 }
 #icono-salida{
-    height: 5vh;
+    height: 6vh;
     width: auto;
     cursor: pointer;
-    padding-right: 4rem;
 }
 
 #logo-header{
     height: 10vh;
     width: auto;
-    padding-left: 5rem;
 }
 
 #icono-opciones{
-    height: 3.5vh;
+    height: 4vh;
     width: auto;
     cursor: pointer;
 }
 
 
 #icono-opcion{
-    height: 2.5vh;
+    height: 3.2vh;
     width: auto;
     cursor: pointer;
 }
@@ -55,7 +66,7 @@ body{
 }
 .opciones{
     padding: 1rem;
-    background-color: rgb(230, 224, 224);
+    background-color: rgb(238, 235, 235);
     box-shadow: 2px 6px 12px rgba(3, 0, 0, 0.511);
 }
 
@@ -71,6 +82,7 @@ body{
     padding-left: 0.8rem;
     cursor: pointer;
     font-weight: 500;
+    font-size: 1rem;
 }
 .cajas {
     display: grid;
@@ -135,11 +147,16 @@ body{
 }
 
 #icono-editar{
-    cursor: pointer;
     height: 3rem;
     width: auto;
-    padding-left: 3rem;
+    cursor: pointer;
+    padding-left: 70%;
 }
+#icono-editar:hover{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+
 
 #boton-cancelar{
     border-radius: 2rem;
@@ -149,9 +166,8 @@ body{
     background: linear-gradient(135deg, #160a55, #162e7b);
     font-weight: 600;
     cursor: pointer;
-    align-self: flex-end;
     margin-bottom: 0.8rem;
-    margin-left: 11rem;
+    margin-left: 80%;
 }
 #left-turnos{
     display: flex;
@@ -159,7 +175,7 @@ body{
     background: linear-gradient(135deg, #160a55, #162e7b);
     border-radius: 0.5rem;
     height: 80%;
-    width: 30%;
+    width: 35%;
     margin-top: 1rem;
     margin-left: 1rem;
     color: #ffffff;
@@ -235,9 +251,202 @@ body{
     width: auto;
     margin-top: 1rem;
     cursor: pointer;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.445); 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.531); 
+}
+.mi-credencial{
+    display: flex;
+    flex-direction: column;
+}
+.mi-credencial .credencial{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    height: 60%;
+    width: 70%;
+    align-self: center;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    color: #ffffff;
+}
+#logo-credencial{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 2rem;
+}
+#nombre-credencial{
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+#span-credencial{
+    font-weight: 500;
+    font-size: 1.3rem;
+    align-self: center;
+    cursor: pointer;
+}
+#icono-credencial{
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+    margin-top: 0.5rem;
 }
 
+#span-credencial:hover{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+.datos-medicos{
+    display: flex;
+    flex-direction: column;
+}
 
+.secciones-datos{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    align-self: center;
+    margin-left: 4rem;
+}
+.datos-internos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.559); 
+    height: 14vh;
+    width: 70%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #fbfbfb, #e2e0e0);
+    color: #160a55;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+}
+.datos-internos img{
+    height: 1.8rem;
+    width: auto;
+    margin: 0.8rem;
 
+}
+#menu-toggle {
+    display: none; 
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        height: 8vh;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nombre-usuario {
+        font-size: 0.8rem;
+    }
+
+    #icono-perfil, #icono-salida {
+        height: 4vh;
+    }
+
+    #logo-header {
+        height: 7vh;
+    }
+    #span-opciones{
+        font-size: 1rem;
+    }
+
+    .cajas {
+        max-width: auto; 
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 0;
+    }
+    .footer {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1rem; 
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        max-height: 100%;
+    }
+
+    #logo_footer {
+        height: 8vh;
+    }
+
+    .secciones-datos {
+        margin-left: 1rem;
+        gap: 1rem; 
+    }
+
+    .datos-internos {
+        height: auto; 
+        width: 80%; 
+    }
+
+    #mapa {
+        width: 70%; 
+        height: auto; 
+    }
+    #icono-opciones{
+        height: 1.4rem;
+    }
+    #icono-opcion{
+        height: 1.2rem;
+    }
+    #menu-toggle {
+        display: block;
+    }
+
+    .opciones {
+        display: none;
+        position: absolute;
+        background-color: rgb(238, 235, 235);
+        max-height: 100%;
+        width: 40%;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
+        padding: 1rem;
+    }
+
+    .opciones.active {
+        display: block;
+    }
+    .secciones-datos{
+        gap: 3rem;
+    }
+    
+#icono-editar{
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+    padding: 0;
+}
+
+#boton-cancelar{
+    border-radius: 2rem;
+    height: 2rem;
+    width: auto;
+    color: #ffffff;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    margin-left: 6rem;
+}
+}
 
