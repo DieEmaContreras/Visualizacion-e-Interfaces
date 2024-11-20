@@ -149,8 +149,8 @@ body{
 #icono-editar{
     height: 3rem;
     width: auto;
-    padding-left: 3rem;
     cursor: pointer;
+    padding-left: 70%;
 }
 #icono-editar:hover{
     transform: scale(1.1);
@@ -166,9 +166,8 @@ body{
     background: linear-gradient(135deg, #160a55, #162e7b);
     font-weight: 600;
     cursor: pointer;
-    align-self: flex-end;
     margin-bottom: 0.8rem;
-    margin-left: 11rem;
+    margin-left: 80%;
 }
 #left-turnos{
     display: flex;
@@ -176,7 +175,7 @@ body{
     background: linear-gradient(135deg, #160a55, #162e7b);
     border-radius: 0.5rem;
     height: 80%;
-    width: 30%;
+    width: 35%;
     margin-top: 1rem;
     margin-left: 1rem;
     color: #ffffff;
@@ -263,7 +262,7 @@ body{
     flex-direction: column;
     margin-top: 2.5rem;
     height: 60%;
-    width: 80%;
+    width: 70%;
     align-self: center;
     background: linear-gradient(135deg, #160a55, #162e7b);
     color: #ffffff;
@@ -383,6 +382,7 @@ body{
         gap: 1rem; 
         font-size: 0.7rem;
         padding: 0.5rem;
+        max-height: 100%;
     }
 
     #logo_footer {
@@ -418,7 +418,7 @@ body{
         position: absolute;
         background-color: rgb(238, 235, 235);
         max-height: 100%;
-        width: 30%;
+        width: 40%;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
         padding: 1rem;
     }
@@ -426,5 +426,27 @@ body{
     .opciones.active {
         display: block;
     }
+    .secciones-datos{
+        gap: 3rem;
+    }
+    
+#icono-editar{
+    height: 3rem;
+    width: auto;
+    cursor: pointer;
+    padding: 0;
+}
+
+#boton-cancelar{
+    border-radius: 2rem;
+    height: 2rem;
+    width: auto;
+    color: #ffffff;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    margin-left: 6rem;
+}
 }
 
