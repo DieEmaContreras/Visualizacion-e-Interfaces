@@ -164,11 +164,7 @@ function confirmTurno() {
   showStep("confirmation");
 }
 
-// Confirmar éxito
-function confirmYes() {
-  alert("¡Turno confirmado con éxito!");
-  location.reload();
-}
+
 
 // Navegar entre pasos
 function showStep(stepId) {
@@ -207,7 +203,7 @@ function confirmTurno() {
 // Confirmar éxito
 function confirmYes() {
   alert("¡Turno confirmado con éxito!");
-  location.reload(); // Recarga la página para reiniciar el proceso
+  window.location.href = "inicio.html"; // Redirige a la página de inicio
 }
 
 // Cancelar turno y volver al inicio

@@ -307,6 +307,11 @@ body {
   margin-left: 3rem;
 }
 
+#searchInput {
+  width: 20rem;
+}
+
+
 
 @media screen and (max-width: 800px) {
 
