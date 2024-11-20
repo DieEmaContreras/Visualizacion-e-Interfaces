@@ -56,7 +56,7 @@ body{
 }
 .opciones{
     padding: 1rem;
-    background-color: rgb(233, 229, 229);
+    background-color: rgb(238, 235, 235);
     box-shadow: 2px 6px 12px rgba(3, 0, 0, 0.511);
 }
 
@@ -313,22 +313,77 @@ body{
     font-weight: 500;
     text-align: center;
     cursor: pointer;
+    padding-bottom: 0.5rem;
 }
 .datos-internos img{
     height: 1.8rem;
     width: auto;
     margin: 0.8rem;
-}
 
-@media screen and (max-width: 700px){
-    .body{
+}@media screen and (max-width: 800px) {
+    body {
         width: 100%;
     }
 
-    .footer{
-        width: auto;
+    .header {
+        flex-wrap: nowrap; /* Mantener los elementos en una fila */
+        padding: 0 1rem;
+    }
+
+    #nombre-usuario {
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+        margin-left: 15rem; 
+    }
+
+    #icono-perfil, #icono-salida {
+        height: 4vh; /* Ajustar tamaños */
+    }
+
+    #logo-header {
+        height: 8vh; /* Ajustar el tamaño del logo */
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .opciones {
+        width: 30%; /* Opciones a la izquierda */
+        padding: 0.5rem; /* Reducir espacio interno */
+    }
+
+    .cajas {
+        width: 70%; /* Cajas a la derecha */
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: rem; /* Ajustar separación entre elementos */
+    }
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr); /* Mantener columnas en mobile */
+        gap: 1rem; /* Reducir el espacio entre columnas */
+        font-size: 0.7rem; /* Ajustar tamaños */
+        padding: 0.5rem;
+    }
+
+    #logo_footer {
+        height: 8vh; /* Ajustar tamaño del logo del footer */
+    }
+
+    .secciones-datos {
+        margin-left: 1rem;
+        gap: 1rem; /* Reducir espacio entre elementos */
+    }
+
+    .datos-internos {
+        height: auto; /* Ajustar tamaño de las tarjetas */
+        width: 80%; /* Ajustar ancho */
+    }
+
+    #mapa {
+        width: 90%; /* Ajustar tamaño del mapa */
+        height: auto; /* Mantener proporción */
     }
 }
-
-
 
