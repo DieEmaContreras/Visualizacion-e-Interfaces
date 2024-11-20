@@ -289,6 +289,13 @@ body {
   margin-left: 36px
 }
 
+#menu-toggle {
+  display: none; 
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.7rem;
+}
 
 
 
@@ -317,6 +324,12 @@ body {
 
   .opciones {
     display: none;
+    position: absolute;
+        background-color: rgb(238, 235, 235);
+        max-height: 100%;
+        width: 30%;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
+        padding: 1rem;
   }
 
   .cajas {
@@ -346,5 +359,22 @@ body {
     font-size: small;
   }
 
+  #menu-toggle {
+    display: block;
+    margin-left: -4rem;
+}
+
+.opciones.active {
+  display: block;
+}
+.footer {
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
+  font-size: 0.7rem;
+  padding: 0.5rem;
+}
+.header-right {
+  margin-right: 1rem;
+}
 
 }

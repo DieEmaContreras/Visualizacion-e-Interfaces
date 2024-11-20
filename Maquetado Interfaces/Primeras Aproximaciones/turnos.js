@@ -1,6 +1,7 @@
 let selectedOption = "";
 let selectedItem = null;
 
+
 const data = {
   consulta: [
     { name: "Cardiología", doctor: "Dr. López(Cardiología)", day: "Lunes 11/12/24", time: "10:00" },
@@ -217,3 +218,10 @@ function cancelTurno() {
   selectedOption = "";
   selectedItem = null;
 }
+
+const menuToggle = document.getElementById("menu-toggle");
+const opciones = document.querySelector(".opciones");
+
+menuToggle.addEventListener("click", () => {
+    opciones.classList.toggle("active");
+});
