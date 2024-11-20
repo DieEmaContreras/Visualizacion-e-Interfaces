@@ -266,3 +266,67 @@ body{
   width: 120px;
   margin-left: 36px
 }
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+.opciones{
+  display: none;
+}
+
+.cajas{
+  width: 100%;
+  min-height: 50rem;
+}
+#turnosContainer{
+  flex-direction: column;
+}
+
+.card {
+  margin: 1rem 2.5em;
+  width: 73%;
+}
+
+.instructive-box {
+  width: 80%;
+  max-width: 80%;
+}
+
+#icono-perfil {
+  height: 5vh;
+  width: auto;
+  cursor: pointer;
+  margin-left: 15em;
+}
+
+#nombre-usuario {
+  /* padding-left: 58rem; */
+  font-weight: 500;
+  font-size: x-small;
+  display: none;
+}
+
+#icono-salida {
+  height: 5vh;
+  width: auto;
+  cursor: pointer;
+  /* padding-right: 4rem; */
+}
+
+#logo-header {
+  height: 7vh;
+  margin-left: -5rem;
+}
+
+#searchTitle{
+  font-size: medium;
+}
+.back-button {
+  font-size: small;
+}
+
+
+}
