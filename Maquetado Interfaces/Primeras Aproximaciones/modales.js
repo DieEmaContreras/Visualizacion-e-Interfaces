@@ -14,6 +14,12 @@ modalTriggers.forEach(trigger => {
     });
 });
 
+function registrarUsuario() {
+    document.getElementById("modal-registro").style.display = "none";
+    document.getElementById("modal-login").style.display = "flex";
+    return false;
+}
+
 // Cerrar modal al hacer clic en el botón de cierre
 closeButtons.forEach(button => {
     button.addEventListener("click", () => {
