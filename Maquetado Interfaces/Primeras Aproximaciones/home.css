@@ -10,21 +10,24 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.h2 {
-    padding-left: 1rem;
+h2 {
+    font-family: "Roboto";
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #444;
 }
 
 
 .seccion-sede {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    border-radius: 1px border black;
-}
-
-.dieta-balanceada {
     display: flex;
-    flex-direction:column;
-    align-items: center;
+    flex-direction: row;
+    gap: 5rem; /* Espaciado entre columnas */
+    background: linear-gradient(135deg, #fbe7c6, #ffefba); /* Degradado suave */
+    border-radius: 10px; /* Bordes redondeados */    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra general */
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .nav_home {
@@ -36,21 +39,26 @@
     color: white;
 }
 
-#home_img {
-    height: 10vh;
-    width: 50%;
-}
 
 #mapa_sede {
-    width: 75%;
+    width: 65%;
+    padding-bottom: 2rem;    
+}
+
+#mapa_sede:hover{
+    transform: translateY(-5px); /* Eleva ligeramente al pasar el cursor */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 #img_sede{
-    width: 75%;
-    left: 2rem;
+    width: 50%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    overflow: hidden;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#dieta_img {
+#noticias_img {
     width: 50%;
 }
 
@@ -59,6 +67,53 @@
     gap: 1rem; 
 }
 
+.noticias {
+    display: flex;
+    flex-direction: row; /* Ajusta los artículos en varias filas si es necesario */
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #fbe7c6, #ffefba); /* Degradado cálido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.notis{
+    display: flex;
+    flex-direction: column;
+    background: #fff; /* Fondo blanco para destacar */
+    border-radius: 10px;
+    align-items: center;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra en cada artículo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    padding: 0.4rem 0.7rem;  
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+.notis:hover {
+    transform: translateY(-5px); /* Eleva ligeramente al pasar el cursor */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button-noticias {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #007BFF; /* Azul vibrante */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-noticias:hover {
+    background: #0056b3; /* Azul más oscuro */
+    transform: scale(1.1); /* Aumenta ligeramente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 /* Estilo general del modal */
 .modal {
     display: none;
