@@ -120,6 +120,8 @@ body{
     place-items: center;
     color: #ffffff;
     font-size: 0.8rem;
+    z-index: 10;
+    position: relative;
 }
 
 #logo_footer {
@@ -129,11 +131,11 @@ body{
 
 #box-turnos{
     display: flex;
+    align-self: center;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.622); 
     border-radius: 0.8rem;
     height: 60%;
     width: 80%;
-    margin-left: 3rem;
     margin-top: 3rem;
 }
 .box-turnos-article{
@@ -150,7 +152,7 @@ body{
     height: 3rem;
     width: auto;
     cursor: pointer;
-    padding-left: 70%;
+    padding-left: 80%;
 }
 #icono-editar:hover{
     transform: scale(1.1);
@@ -316,7 +318,7 @@ body{
     height: 14vh;
     width: 70%;
     border-radius: 10px;
-    background: linear-gradient(135deg, #fbfbfb, #e2e0e0);
+    background: linear-gradient(135deg, #fbfbfb, #d9d7d7);
     color: #160a55;
     font-size: 0.9rem;
     font-weight: 500;
@@ -340,11 +342,6 @@ body{
 
 @media screen and (max-width: 800px) {
     body {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    main{
         max-width: 100%;
         margin: 0;
         padding: 0;
@@ -417,10 +414,10 @@ body{
         display: none;
         position: absolute;
         background-color: rgb(238, 235, 235);
-        max-height: 100%;
-        width: 40%;
+        width: 230px;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
         padding: 1rem;
+        height: 100%;
     }
 
     .opciones.active {
@@ -435,6 +432,7 @@ body{
     width: auto;
     cursor: pointer;
     padding: 0;
+    margin-left: 1rem;
 }
 
 #boton-cancelar{
@@ -456,5 +454,9 @@ body{
   .header-right {
     margin-right: 1rem;
   }
+  
+.box-turnos-article h4{
+    font-size: 0.9rem;
+}
 }
 
