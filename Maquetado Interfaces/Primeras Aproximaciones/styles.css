@@ -150,3 +150,58 @@ body{
     font-weight: 600;
     box-shadow: 0px 4px 8px rgba(0,0,0, 0.5);
 }
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .header {
+        height: auto; /* Ajustar la altura automáticamente */
+        padding-left: 3rem; /* Reducir padding lateral */
+        flex-direction: column; /* Cambiar disposición a columna */
+        justify-content: center; /* Centrar contenido verticalmente */
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+    .header {
+        padding-left: 2rem; /* Reducir aún más el padding */
+        text-align: center; /* Centrar contenido */
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .header {
+        padding-left: 1rem; /* Mínimo padding */
+        padding-right: 1rem; /* Agregar padding lateral */
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+        gap: 3rem; /* Reducir espacio entre columnas */
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 2rem 1rem; /* Agregar padding */
+    }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 2rem; /* Reducir espacio entre filas */
+        text-align: center; /* Centrar texto */
+        font-size: 0.7rem; /* Reducir tamaño de fuente */
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .footer {
+        gap: 1rem; /* Reducir aún más el espacio */
+        padding: 1rem; /* Ajustar padding */
+        font-size: 0.6rem; /* Tamaño de fuente más pequeño */
+    }
+}

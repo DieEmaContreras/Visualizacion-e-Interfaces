@@ -52,14 +52,14 @@ header{
   position: absolute;
   top: 5%; 
   left: 2%;  
-  align-items: center;  
-  background: rgba(34, 33, 33, 0.8);
+  align-items: center;    
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   padding: 0.4rem 0.7rem;  
   border-radius: 2rem;
   font-weight: 600;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -89,4 +89,61 @@ header{
   line-height: 200px;
   font-size: 80px;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .carousel-cell {
+    width: 70%; /* Reduce el tamaño de las celdas */
+    height: 250px;
+  }
+
+  .carousel-cell__text {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    top: 85%;
+    left: 75%;
+    font-size: 0.7rem;
+    height: 1.8rem;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .carousel-cell {
+    width: 100%;
+    height: 200px;
+  }
+
+  .carousel-cell__text {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .button {
+    top: 90%;
+    left: 70%;
+    font-size: 0.6rem;
+    height: 1.5rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .carousel-cell {
+    height: 150px; /* Reduce la altura de las celdas */
+  }
+
+  .carousel-cell__text {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .button {
+    top: 95%;
+    left: 65%;
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
 }

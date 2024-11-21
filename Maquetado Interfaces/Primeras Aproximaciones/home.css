@@ -22,8 +22,7 @@ h2 {
 .seccion-sede {
     display: flex;
     flex-direction: row;
-    gap: 5rem; /* Espaciado entre columnas */
-    background: linear-gradient(135deg, #fbe7c6, #ffefba); /* Degradado suave */
+    gap: 2rem; /* Espaciado entre columnas */    
     border-radius: 10px; /* Bordes redondeados */    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra general */
     padding-left: 7rem;
@@ -46,8 +45,9 @@ h2 {
 }
 
 #mapa_sede:hover{
-    transform: translateY(-5px); /* Eleva ligeramente al pasar el cursor */
+       
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 #img_sede{
@@ -56,6 +56,35 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
     overflow: hidden;    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 0.75rem;
+}
+
+#Sede{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+#info-localizacion{
+    color: #160a55;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+#info-localizacion span{
+    font-weight: 500;
+}
+#span-centro{
+    font-size: 1rem;
+}
+
+#icono-localizacion{
+    height: 1rem;
+    width: auto;
+    margin-right: 0.5rem;
 }
 
 #noticias_img {
@@ -71,8 +100,7 @@ h2 {
     display: flex;
     flex-direction: row; /* Ajusta los artículos en varias filas si es necesario */
     gap: 2rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, #fbe7c6, #ffefba); /* Degradado cálido */
+    padding: 2rem;    
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
@@ -101,19 +129,98 @@ h2 {
 .button-noticias {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: #007BFF; /* Azul vibrante */
+    background: rgba(34, 33, 33, 0.8);
     color: #fff;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
+    font-family: "Roboto";
 }
 
 .button-noticias:hover {
-    background: #0056b3; /* Azul más oscuro */
+    background: #111111; /* Azul más oscuro */
     transform: scale(1.1); /* Aumenta ligeramente */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 1024px) { /* Tablets */
+    .seccion-sede {
+        flex-direction: column;
+        padding: 1rem 3rem; /* Ajustar el padding */
+        gap: 1rem;
+    }
+
+    .noticias {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 3rem;
+    }
+
+    #img_sede,
+    #mapa_sede,
+    #noticias_img {
+        width: 80%;
+        margin: auto; /* Centrar imágenes */
+    }
+}
+
+@media (max-width: 768px) { /* Dispositivos móviles grandes */
+    .header {
+        padding: 1rem;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .seccion-sede,
+    .noticias {
+        padding: 1rem;
+    }
+
+    #img_sede,
+    #mapa_sede,
+    #noticias_img {
+        width: 100%;
+    }
+
+    .notis {
+        padding: 1rem;
+    }
+
+    .button-noticias {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) { /* Móviles pequeños */
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .seccion-sede,
+    .noticias {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .notis {
+        padding: 0.8rem;
+    }
+
+    .button-noticias {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+
 /* Estilo general del modal */
 .modal {
     display: none;
