@@ -339,6 +339,9 @@ body {
 
 @media screen and (max-width: 800px) {
 
+  body{
+    font-size: small;
+  }
   .header {
     height: 8vh;
     max-width: 100%;
@@ -462,5 +465,6 @@ body {
     margin-top: 1.6rem;
     margin-left: 0rem;
   }
+
   
 }
