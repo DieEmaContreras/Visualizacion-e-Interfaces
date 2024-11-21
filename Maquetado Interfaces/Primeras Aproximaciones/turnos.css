@@ -240,11 +240,11 @@ body {
   background: none;
   border: none;
   color: #160a55;
-  /* Azul como el botón "Entendido" */
-  font-size: 20px;
+  font-size: 1rem;
   cursor: pointer;
   display: flex;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .back-button:hover {
@@ -309,9 +309,32 @@ body {
 }
 
 #searchInput {
+  margin-top: 0.2rem;
   width: 20rem;
+  height: 1.3rem;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  color: #160a55;
+  margin-right: 0.7rem;
+}
+
+.material-symbols-outlined.relleno {
+  font-variation-settings:
+    'FILL' 1, /* Relleno */
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    margin-right: 0.5rem;
+}
+
+#step1 {
+  margin-top: 2.7rem;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -426,4 +449,18 @@ body {
   #searchInput {
     width: 14rem;
   }
+
+  .primerPaso {
+    font-size: medium;
+  }
+
+  .cajas h2 {
+    font-size: medium;
+  }
+
+  #step1 {
+    margin-top: 1.6rem;
+    margin-left: 0rem;
+  }
+  
 }
