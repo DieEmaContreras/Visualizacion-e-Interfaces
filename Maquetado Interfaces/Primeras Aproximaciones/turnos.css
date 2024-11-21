@@ -337,7 +337,7 @@ body {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 478px) {
 
   body{
     font-size: small;
@@ -450,7 +450,7 @@ body {
   }
 
   #searchInput {
-    width: 14rem;
+    width: 68%;
   }
 
   .primerPaso {
@@ -466,5 +466,13 @@ body {
     margin-left: 0rem;
   }
 
+  #BotonCM, #BotonES {
+    margin-top: 0.5rem;
+    width: 6rem;
+    height: 1.5rem;
+    font-size: xx-small;
+    margin-left: 0.0rem;
+    margin-right: 0.1rem;
+  }
   
 }
