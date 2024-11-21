@@ -3,7 +3,7 @@
 body { font-family: "Roboto"; }
 
 .carousel {
-  background: #7a7a7a;
+  background: #ffffff;
 }
 
 header{
@@ -29,7 +29,7 @@ header{
   top: 80%; 
   left: 80%;   
   padding: 0.4rem 0.7rem;    
-  background: rgba(34, 33, 33, 0.8);
+  background: linear-gradient(135deg, #160a55, #162e7b);
   color: rgb(255, 255, 255);
   border-radius: 2rem;
   height: 2rem;

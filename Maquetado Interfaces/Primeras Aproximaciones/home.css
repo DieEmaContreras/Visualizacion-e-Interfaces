@@ -15,14 +15,14 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.8rem;
-    color: #444;
+    color: #160a55;
 }
 
 
 .seccion-sede {
     display: flex;
     flex-direction: row;         
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra general */
+    
     align-items: center;
     padding: 4rem;
 }
@@ -49,7 +49,7 @@ h2 {
 }
 
 #img_sede{
-    width: 75%;
+    width: 65%;
     height: 100%;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
@@ -113,7 +113,7 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 3rem; /* Espaciado entre columnas */        
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra general */
+    
     align-items: center;
     
 }
@@ -169,13 +169,14 @@ ul {
 .button-noticias {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: rgba(34, 33, 33, 0.8);
-    color: #fff;
-    border: none;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #160a55, #162e7b);
+    color: #fff;     
     cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
     transition: background 0.3s ease, transform 0.3s ease;
     font-family: "Roboto";
+    border-radius: 2rem;
 }
 
 .button-noticias:hover {
@@ -208,6 +209,11 @@ ul {
         background: #111111; /* Azul más oscuro */
         transform: scale(1.1); /* Aumenta ligeramente */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nuestra_institucion {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
