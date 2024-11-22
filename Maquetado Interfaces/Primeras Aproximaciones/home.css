@@ -215,6 +215,15 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .footer{
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1rem; 
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        max-height: 100%;
+    }
+    
 }
 
 @media (max-width: 768px) { /* Dispositivos móviles grandes */
