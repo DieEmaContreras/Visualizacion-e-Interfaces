@@ -476,3 +476,56 @@ body {
   }
   
 }
+
+@media screen and (min-width: 479px) and (max-width: 800px) {
+  .opciones {
+    display: none;
+    position: absolute;
+    background-color: rgb(238, 235, 235);
+    max-height: 100%;
+    width: 30%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.531);
+    padding: 1rem;
+  }
+
+  #menu-toggle {
+    display: block;
+    margin-left: -4rem;
+  }
+
+  .header {
+    height: 8vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #icono-perfil,
+  #icono-salida {
+    height: 4vh;
+  }
+
+  #logo-header {
+    height: 7vh;
+  }
+
+  .opciones.active {
+    display: block;
+  }
+
+  .cajas {
+    width: 100%;
+    min-height: 50rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+
+  .card {
+    width: 44%;
+  }
+}

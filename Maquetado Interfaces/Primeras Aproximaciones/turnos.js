@@ -196,7 +196,7 @@ function confirmTurno() {
         ? `<p><strong>Profesional:</strong> ${selectedItem[0].doctor}</p>`
         : ""
     }
-    <p><strong>Sede:</strong> Mansilla 2344, Moron, Buenos Aires</p>
+    <p><strong>Sede:</strong> Mansilla 2344, Morón, Buenos Aires</p>
   `;
 }
 
