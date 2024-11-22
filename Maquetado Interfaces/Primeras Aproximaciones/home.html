@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Bienvenidos!</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel = "stylesheet" href = "home.css">    
+    <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="../img/opcion 1.png" type="image">
-    <link rel = "stylesheet" href ="flickity.min.css">
-    <link rel = "stylesheet" href="flickity.css" media = "screen">  
-    
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav_home">
-            <img src="../img/opcion_6.png" alt="Logo Medicare" id="img">           
-            
+            <img src="../img/opcion_6.png" alt="Logo Medicare" id="img">
+
             <div class="btn-container">
                 <button class="modal-trigger btn-login" data-modal="modal-login">Iniciar sesión</button>
                 <button class="modal-trigger btn-registro" data-modal="modal-registro">Registrarse</button>
@@ -27,8 +31,8 @@
     </header>
 
 
-     <!-- Modal de Login -->
-     <div id="modal-login" class="modal">
+    <!-- Modal de Login -->
+    <div id="modal-login" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <form action="inicio.html" method="get">
@@ -51,126 +55,130 @@
     <div id="modal-registro" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <form id="registro-form" onsubmit="return registrarUsuario()"> 
-            <div class="logo-container"> 
-            <img src="../img/opcion_6.png" alt="Logo" class="form-logo"> 
-            </div> 
-            <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required> 
-            <input type="password" id="password" name="password" placeholder="Contraseña" required> 
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Repetir contraseña" required> 
-            <input type="text" id="nombres" name="nombres" placeholder="Nombres" required> 
-            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required> 
-            <input type="tel" id="celular" name="celular" placeholder="Celular" required> 
-            <select id="prepaga" name="prepaga" required> 
-            <option value="">Seleccione una opción de prepaga</option> 
-            <option value="prepaga1">Prepaga 1</option> 
-            <option value="prepaga2">Prepaga 2</option> 
-            <option value="prepaga3">Prepaga 3</option> 
-            </select> 
-            <button type="submit" class="btn-link">Registrarse</button> 
-        </form>
+            <form id="registro-form" onsubmit="return registrarUsuario()">
+                <div class="logo-container">
+                    <img src="../img/opcion_6.png" alt="Logo" class="form-logo">
+                </div>
+                <input type="email" id="email" name="email" placeholder="Dirección de correo electrónico" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Repetir contraseña"
+                    required>
+                <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                <select id="prepaga" name="prepaga" required>
+                    <option value="">Seleccione una opción de prepaga</option>
+                    <option value="prepaga1">Prepaga 1</option>
+                    <option value="prepaga2">Prepaga 2</option>
+                    <option value="prepaga3">Prepaga 3</option>
+                </select>
+                <button type="submit" class="btn-link">Registrarse</button>
+            </form>
         </div>
     </div>
-  
-    <div class="carousel" data-flickity='{ "freeScroll": true }'>
-        
 
-        <div class="carousel-cell">        
-            <div class = "carousel-cell__content">               
-            <div class = "caroulsel-cell__text">
-                <p> Dengue: Precauciones y peligros</p>
-            </div>             
-                <img class = "carousel-cell__img" src = "../img/dengue.jpg" alt = "Mosquito" > 
-            </div>
-            <button class = "button"> Conocer más </button>
-        </div>
-       
+    <div class="carousel" data-flickity='{ "freeScroll": true }'>
+
+
         <div class="carousel-cell">
-        <div class = "carousel-cell__content">
-            <div class = "caroulsel-cell__text">
-                <p>Viruela del Mono: Prevención</p>
+            <div class="carousel-cell__content">
+                <div class="caroulsel-cell__text">
+                    <p> Dengue: Precauciones y peligros</p>
+                </div>
+                <img class="carousel-cell__img" src="../img/dengue.jpg" alt="Mosquito">
             </div>
-            <img class = "carousel-cell__img" src = "../img/Imagen-destacada-Blog3-1.png" alt = "viruela_mono">
-            <button class = "button"> Conocer más </button>
+            <button class="button"> Conocer más </button>
         </div>
-    </div>
-        
+
         <div class="carousel-cell">
-            <div class = "carousel-cell__content">
-                <div class = "caroulsel-cell__text">
+            <div class="carousel-cell__content">
+                <div class="caroulsel-cell__text">
+                    <p>Viruela del Mono: Prevención</p>
+                </div>
+                <img class="carousel-cell__img" src="../img/Imagen-destacada-Blog3-1.png" alt="viruela_mono">
+                <button class="button"> Conocer más </button>
+            </div>
+        </div>
+
+        <div class="carousel-cell">
+            <div class="carousel-cell__content">
+                <div class="caroulsel-cell__text">
                     <p>Fiebre Amarilla: Prevención</p>
                 </div>
-                <img class = "carousel-cell__img" src = "../img/vacuna-fiebre-amarilla-san-juanjpg.jpg" alt = "viruela_mono">
-                <button class = "button"> Conocer más </button>
+                <img class="carousel-cell__img" src="../img/vacuna-fiebre-amarilla-san-juanjpg.jpg" alt="viruela_mono">
+                <button class="button"> Conocer más </button>
             </div>
 
         </div>
         <div class="carousel-cell">
-            <div class = "carousel-cell__content">
-                <div class = "caroulsel-cell__text">
+            <div class="carousel-cell__content">
+                <div class="caroulsel-cell__text">
                     <p>Cuidar tu piel en el verano: Como prepararse y que protector comprar </p>
                 </div>
-                <img class = "carousel-cell__img" src = "../img/joven-aplica-crema-solar-espalda_98.jpg" alt = "proteccion_sol">
-                <button class = "button"> Conocer más </button>
+                <img class="carousel-cell__img" src="../img/joven-aplica-crema-solar-espalda_98.jpg"
+                    alt="proteccion_sol">
+                <button class="button"> Conocer más </button>
             </div>
 
         </div>
-        </div>   
-        <br>
-        <br>
-        <h2> ¿Por que elegirnos? </h2>
-        <article class = "nuestra_institucion">
-            <div class = "descripcion">
-                <ul>
-                    <li><span>Gestiona tus turnos:</span> Estudios, recetas y atención médica para toda tu familia.</li>
-                    <li><span>Accede a tus informes:</span> Visualiza o descarga imágenes médicas y análisis de laboratorio.</li>
-                    <li><span>Innovación en medicina:</span> Innovando en medicina moderna desde 1990.</li>
-                    <li><span>Reserva fácilmente:</span> Activa notificaciones para ser avisado si se libera un horario.</li>
-                </ul>
-            </div>
-            <div class = "medico">
-                <img src = "../img/XBvj-j5y_1256x620__1.jpg" alt = "nuestro medicos" id = "medicos">
-            </div>
-        </article> 
-        
-        <h2> Nuestra Sede  </h2>
-        <div class = "seccion-sede">
-            <article class = "img-sede">                
-            <img src = "../img/preview_facebook.jpg" alt = "Sede 1" id = "img_sede">
-            </article>            
-                <article id="Sede">                   
-                    <div id="info-localizacion">
-                        <span id="span-centro">Centro Medico MediCare Moron</span>
-                        <span> <img src="../img/check.png" alt="icono localizacion" id="icono-localizacion">MORON | Mansilla
-                            2344, Moron, Buenos Aires</span>
-                        <img src="../img/Captura de pantalla 2024-11-18 120031.png" alt="Mapa moron" id="mapa_sede">
-                    </div>
-                </article>
+    </div>
+    <br>
+    <br>
+    <h2> ¿Por que elegirnos? </h2>
+    <article class="nuestra_institucion">
+        <div class="descripcion">
+            <ul>
+                <li><span>Gestiona tus turnos:</span> Estudios, recetas y atención médica para toda tu familia.</li>
+                <li><span>Accede a tus informes:</span> Visualiza o descarga imágenes médicas y análisis de laboratorio.
+                </li>
+                <li><span>Innovación en medicina:</span> Innovando en medicina moderna desde 1990.</li>
+                <li><span>Reserva fácilmente:</span> Activa notificaciones para ser avisado si se libera un horario.
+                </li>
+            </ul>
         </div>
-       
-        <h2>Articulos de interes</h2>
-        <div class = "noticias">
-            <article class = "notis">
+        <div class="medico">
+            <img src="../img/XBvj-j5y_1256x620__1.jpg" alt="nuestro medicos" id="medicos">
+        </div>
+    </article>
+
+    <h2> Nuestra Sede </h2>
+    <div class="seccion-sede">
+        <article class="img-sede">
+            <img src="../img/preview_facebook.jpg" alt="Sede 1" id="img_sede">
+        </article>
+        <article id="Sede">
+            <div id="info-localizacion">
+                <span id="span-centro">Centro Medico MediCare Moron</span>
+                <span> <img src="../img/check.png" alt="icono localizacion" id="icono-localizacion">MORON | Mansilla
+                    2344, Moron, Buenos Aires</span>
+                <img src="../img/Captura de pantalla 2024-11-18 120031.png" alt="Mapa moron" id="mapa_sede">
+            </div>
+        </article>
+    </div>
+
+    <h2>Articulos de interes</h2>
+    <div class="noticias">
+        <article class="notis">
             <p>Dieta baleanceada: Plan de comidas y objetivos </p>
-            <img src = "../img/dieta-balanceada-saludable.jpeg" id = "noticias_img" alt = "Comida">            
-            <button class = "button-noticias"> Conocer más </button>  
-            </article>
-            <article class = "notis">
+            <img src="../img/dieta-balanceada-saludable.jpeg" id="noticias_img" alt="Comida">
+            <button class="button-noticias"> Conocer más </button>
+        </article>
+        <article class="notis">
             <p>Agotamiento por calor: Como cuidarse en el verano</p>
-            <img src = "../img/beneficios-del-agua-2-1024x683.jpg" id = "noticias_img" alt = "Agua">
-            <button class = "button-noticias"> Conocer más </button>
-            </article>
-            <article class = "notis">
+            <img src="../img/beneficios-del-agua-2-1024x683.jpg" id="noticias_img" alt="Agua">
+            <button class="button-noticias"> Conocer más </button>
+        </article>
+        <article class="notis">
             <p> Cuidado de los ojos: Impacto en los niños</p>
-            <img src = "../img/iStock-1306188028.jpg" id = "noticias_img" alt = "ojos">
-            <button class = "button-noticias"> Conocer más </button>
-            </article>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-    
+            <img src="../img/iStock-1306188028.jpg" id="noticias_img" alt="ojos">
+            <button class="button-noticias"> Conocer más </button>
+        </article>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <footer class="footer">
         <section class="logo_redes">
             <img src="../img/opcion_6.png" alt="imagen logo" id="logo_footer">
@@ -184,35 +192,46 @@
         </section>
 
         <section clas="contacto">
-                <h3>Contacto</h3>
+            <h3>Contacto</h3>
+            <h4>
+                Telefono +54 5594-8908
+            </h4>
+            <a href="" style="text-decoration: none; color: inherit;">
                 <h4>
-                    Telefono
+                    Email turnos@medicare.com.ar
                 </h4>
+            </a>
+            <a href="" style="text-decoration: none; color: inherit;">
                 <h4>
-                    Email
+                    Nuestros centros
                 </h4>
-                <h4>
-                    Formulario
-                </h4>
+            </a>
         </section>
 
-            <section class="ayuda">
-                <h3>Ayuda</h3>
+        <section class="ayuda">
+            <h3>Ayuda</h3>
+            <a href="" style="text-decoration: none; color: inherit;">
                 <h4>
-                   Opcion 1
+                    Preguntas frecuentes
                 </h4>
+            </a>
+            <a href="" style="text-decoration: none; color: inherit;">
                 <h4>
-                   Opcion 2
+                    Coberturas que atendemos
                 </h4>
+            </a>
+            <a href="" style="text-decoration: none; color: inherit;">
                 <h4>
-                    Opcion 3
+                    ¿Tenés dudas?
                 </h4>
-            </section>
+            </a>
+        </section>
     </footer>
-    
+
     <script src="flickity.pkgd.min.js"></script>
-    <script src = "main.js"></script>
-    <script src = "modales.js"></script>
-    
+    <script src="main.js"></script>
+    <script src="modales.js"></script>
+
 </body>
+
 </html>
